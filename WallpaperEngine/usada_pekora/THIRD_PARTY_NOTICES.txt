@@ -1,0 +1,3 @@
+PixiJS 6.5.10 license: PIXIJSLICENSE.txt
+pixi-live2d-display 0.4.0 license: LIVE2DPLUGINLICENSE.txt
+Live2D Cubism Core is used by this project to load Cubism 3 models.

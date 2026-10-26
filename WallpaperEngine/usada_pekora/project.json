@@ -1,0 +1,13 @@
+{
+  "title": "Usada Pekora - Live2D Sample",
+  "description": "Live2D Cubism sample wallpaper from Sound Voltex assets",
+  "type": "web",
+  "file": "index.html",
+  "tags": ["Anime", "Character", "2D"],
+  "properties": {
+    "scale": { "text": "Scale", "type": "slider", "value": 1, "min": 0.55, "max": 1.55 },
+    "horizontal": { "text": "Horizontal position", "type": "slider", "value": 0, "min": -50, "max": 50 },
+    "vertical": { "text": "Vertical position", "type": "slider", "value": 0, "min": -50, "max": 50 },
+    "brightness": { "text": "Brightness", "type": "slider", "value": 1, "min": 0.5, "max": 1.5 }
+  }
+}

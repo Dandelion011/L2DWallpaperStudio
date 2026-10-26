@@ -1,0 +1,53 @@
+{
+  "name": "v7-wallpaper-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone Live2D wallpaper manager and Wallpaper Engine web wallpaper sample",
+  "main": "src/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "app": "npm run build && electron .",
+    "build": "vite build",
+    "compat": "npm run build && node scripts/compatibility-check.cjs",
+    "dist": "npm run build && electron-builder --win dir",
+    "pack:resources": "node scripts/pack-resource-library.cjs",
+    "dist:demo": "npm run build && node scripts/patch-portable-template.cjs && electron-builder --win portable"
+  },
+  "dependencies": {
+    "pixi-live2d-display": "0.4.0",
+    "pixi.js": "6.5.10"
+  },
+  "devDependencies": {
+    "electron": "^45.0.0",
+    "electron-builder": "^26.0.12",
+    "vite": "^7.1.12"
+  },
+  "build": {
+    "appId": "local.v7.wallpaperstudio",
+    "productName": "V7 Wallpaper Studio",
+    "extraResources": [
+      { "from": "build/v7-wallpaper-studio.ico", "to": "v7-wallpaper-studio.ico" },
+      { "from": "build/v7-wallpaper-studio-tray.png", "to": "v7-wallpaper-studio-tray.png" }
+    ],
+    "electronDist": "node_modules/electron/dist",
+    "files": [
+      "dist/app/**/*",
+      "src/main.cjs",
+      "src/preload.cjs",
+      "package.json",
+      "THIRD_PARTY_NOTICES.txt"
+    ],
+    "portable": {
+      "splashImage": "build/portable-splash.bmp"
+    },
+    "win": {
+      "target": "dir",
+      "icon": "build/v7-wallpaper-studio.ico"
+    }
+  },
+  "allowScripts": {
+    "electron@45.0.0": true,
+    "electron-winstaller@5.4.0": true,
+    "esbuild@0.28.2": true
+  }
+}

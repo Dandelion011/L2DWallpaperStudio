@@ -1,0 +1,62 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "usada_pekora.moc3",
+		"Textures": [
+			"usada_pekora.4096/texture_00.png",
+			"usada_pekora.4096/texture_01.png"
+		],
+		"Physics": "usada_pekora.physics3.json",
+		"DisplayInfo": "usada_pekora.cdi3.json",
+		"Motions": {
+			"In": [
+				{
+					"File": "usada_pekora_m01a_in.motion3.json"
+				}
+			],
+			"Idle": [
+				{
+					"File": "usada_pekora_m02a_idle.motion3.json"
+				}
+			],
+			"Ok": [
+				{
+					"File": "usada_pekora_m03a_kettei.motion3.json"
+				}
+			],
+			"Out": [
+				{
+					"File": "usada_pekora_m04a_out.motion3.json"
+				}
+			],
+			"R_Good": [
+				{
+					"File": "usada_pekora_m05a_good.motion3.json"
+				}
+			],
+			"R_Bad": [
+				{
+					"File": "usada_pekora_m06a_bad.motion3.json"
+				}
+			],
+			"R_Verygood": [
+				{
+					"File": "usada_pekora_m07a_verygood.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

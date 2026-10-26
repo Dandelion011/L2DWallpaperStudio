@@ -1,0 +1,23 @@
+node_modules/
+dist/
+dist-check/
+dist-check2/
+exports/
+resource-library/
+public/models/
+public/wallpapers/
+
+# Local verification screenshots and captures
+*-check.png
+desktop-*.png
+native-check.png
+native-shot.png
+preview-shot.png
+verify-desktop.png
+native-input.html
+native.html
+
+# Local machine/editor files
+.DS_Store
+Thumbs.db
+.vscode/
