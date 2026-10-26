@@ -17,7 +17,7 @@ The bundled Live2D Core is Cubism 5.3 Web Core. It supports the included MOC v1-
 For the portable build, keep these two files in the same directory and open the executable:
 
 ```text
-V7 Wallpaper Studio 0.1.0.exe
+V7.Wallpaper.Studio.0.1.0.exe
 V7.Wallpaper.Studio.Resources.asar
 ```
 
